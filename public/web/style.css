@@ -1,0 +1,440 @@
+body {
+    font-family: "Averia Serif Libre", serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.top-bar {
+    display: flex;
+
+    align-items: center;
+    padding: 1rem;
+    background-color: #f5f5f5;
+}
+
+#image {
+    padding-left: 60px;
+}
+
+#pakistan {
+    padding-left: 10px;
+}
+
+.top-bar img {
+    height: 50px;
+    /* Adjust as needed */
+}
+
+.top-bar h1 {
+    margin-left: 1rem;
+}
+
+.language-select {
+    cursor: pointer;
+    margin-left: 1000px;
+    font-weight: 200;
+
+}
+
+
+/* Nav Bar */
+.main-nav {
+    display: flex;
+    background-color: #254D7C;
+    align-items: center;
+}
+
+
+
+.signin-button {
+    background-color: #D9D9D9;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 6px;
+    margin-left: 1000px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    outline: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+
+
+.main-nav h2 {
+
+    padding: 0.5rem;
+    padding-left: 5rem;
+    margin: 0;
+    color: white;
+}
+
+/* Body */
+
+
+/* Search Section */
+.search-section {
+    position: relative;
+    padding: 2rem;
+    background-image: url('img/body.png');
+    background-size: auto;
+    background-position: center;
+    min-height: 217px;
+}
+
+.search-content {
+    position: absolute;
+    top: 38%;
+    left: 40%;
+    margin-top: 2.3rem;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+
+.search-content h1 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.search-content p {
+    background-color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 5px 17px;
+    margin-right: 777px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* 
+      max-width: 1000px; */
+    padding: 10px;
+    margin-top: 30px;
+    width: 1000px;
+}
+
+.search-bar input[type="text"] {
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin: 0;
+    font-size: 17px;
+    font-weight: bold;
+    flex-grow: 1;
+    /* Allows the inputs to grow and fill the space */
+}
+
+.search-bar input[type="text1"] {
+    border: none;
+    outline: none;
+    padding: 10px;
+    padding-left: 40px;
+    margin-left: 0px;
+    font-size: 17px;
+
+    font-weight: bold;
+    flex-grow: 1;
+    /* Allows the inputs to grow and fill the space */
+}
+
+
+.search-bar input[type="text"]#title-input {
+    border-right: 1px solid #ddd;
+    /* Creates a separator between inputs */
+}
+
+.search-bar input[type="text"]#location-input {
+    margin-left: -1px;
+    /* Overlaps the border to create a unified look */
+}
+
+.search-bar button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.search-bar button i {
+    color: #333;
+    font-size: 1rem;
+}
+
+/* Optional: Adjust the focus styles for the inputs */
+.search-bar input[type="text"]:focus {
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Optional: Styles for hover effect on the search button */
+.search-bar button:hover {
+    background-color: #f2f2f2;
+    border-radius: 40px;
+}
+
+/* Search Filters */
+.search-filter {
+    background-color: #fff;
+    /* Adjust color as needed */
+    padding: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 9px;
+    /* Rounded corners */
+    display: inline-flex;
+    margin-left: 630px;
+    margin-top: 9px;
+    /* Aligns items in a row */
+    align-items: center;
+    /* Vertically center align items */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    /* Shadow effect for depth */
+}
+
+.search-label {
+    font-weight: bold;
+    /* Make the label bold */
+    margin-right: 10px;
+    /* Space after label */
+    font-size: 12px;
+}
+
+.filter-button {
+    border: none;
+    background: none;
+    margin-right: 10px;
+    /* Space between buttons */
+    padding: 5px 10px;
+    /* Padding inside buttons */
+    border-radius: 10px;
+    font-size: 12px;
+    /* Slightly rounded corners for buttons */
+    cursor: pointer;
+    /* Cursor changes to pointer to indicate it's clickable */
+    transition: background-color 0.3s;
+    /* Smooth transition for background color change */
+}
+
+.filter-button:hover {
+    background-color: #e9e9e9;
+    /* Light grey background on hover */
+}
+
+/* Assuming the last button should not have a margin on the right */
+.filter-button:last-child {
+    margin-right: 0;
+}
+
+
+/* Content Section */
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+.browse-jobs-section {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Add more styling for your form elements here */
+
+
+.tabs {
+    display: flex;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.tab {
+    background: none;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+}
+
+.tab.active::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -2px;
+    width: calc(100% - 40px);
+    border-bottom: 3px solid black;
+}
+
+.job-categories ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+
+
+.job-categories li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.job-categories li:last-child {
+    border-bottom: none;
+}
+
+.tab.active {
+    color: black;
+}
+
+.tab:hover {
+    background-color: #ddd;
+}
+
+
+.browse-jobs .job-categories li:hover {
+    background-color: #e9e9e9;
+}
+
+.job-promo {
+    width: 50%;
+    padding-left: 1rem;
+}
+
+.job-promo h1 {
+    margin-bottom: 1rem;
+    margin-left: 11rem;
+    font-size: 30px;
+}
+
+.job-promo h2 {
+    margin-bottom: 1rem;
+    margin-left: 4.6rem;
+    margin-top: 2.5rem;
+    text-align: center;
+    font-weight: normal;
+}
+
+.Job-title {
+    text-align: center;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.statistics {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    margin-bottom: 5rem;
+    /* This will space out the stat items evenly */
+    padding: 1rem;
+    background-color: #f5f5f5;
+    align-items: center;
+    /* Aligns items vertically */
+}
+
+.stat-item {
+    text-align: center;
+    flex-basis: 45%;
+    /* This sets a base width for each item */
+}
+
+.stat-item img {
+    width: 50px;
+    /* Set the width of the icons */
+    height: auto;
+    /* Maintain aspect ratio */
+    margin-bottom: 0.5rem;
+    /* Space between icon and number */
+}
+
+.stat-item strong {
+    display: block;
+    /* Make strong tag a block to enforce the line break after the number */
+    font-size: 2rem;
+    /* Larger font size for the number */
+    margin-bottom: 0.25rem;
+    /* Small space between the number and description */
+}
+
+/* Further styles can be added to match the exact look you're going for */
+
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+
+    background-color: #254D7C;
+}
+
+.stat-item {
+    text-align: center;
+}
